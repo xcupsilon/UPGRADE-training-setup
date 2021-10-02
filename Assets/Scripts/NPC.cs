@@ -6,7 +6,7 @@ public class NPC : MonoBehaviour, IInteractable
 {
     public bool Interacted(GameObject obj)
     {
-        Debug.Log("NPC has been interacted with");
+        Debug.Log("NPC has been interacted by " + obj.name);
         
         return true;
     }
