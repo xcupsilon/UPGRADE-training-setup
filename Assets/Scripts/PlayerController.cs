@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -8,10 +10,10 @@ public class PlayerController : MonoBehaviour
     private bool _fPressed;
     //private bool escapePressed;
 
-    private float rayCastDistance = 100f;
-    
-    // Update is called once per frame
+    private float rayCastDistance = 3f;
 
+    public LayerMask layerMask;
+    
     void Update()
     {
         Debug.Log(Input.GetAxis("Interact"));
@@ -25,8 +27,6 @@ public class PlayerController : MonoBehaviour
         {
             _fPressed = false;
         }
-        
-
         //if (Input.GetKeyDown(KeyCode.Escape)) EscapePressed = true; else EscapePressed = false;
     }
 
@@ -38,13 +38,14 @@ public class PlayerController : MonoBehaviour
 
     void CheckForInteraction()
     {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, rayCastDistance, layerMask);
+        Debug.DrawRay(transform.position, Vector2.right * rayCastDistance, Color.red);
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.right));
-
-        if (hit.collider != null && hit.collider)
+        Debug.Log(hit.collider);
+        
+        if (hit.collider != null)
         {
             Interact(hit.collider.gameObject);
-            Debug.Log("NPC Detected");
         }
         
         Input.ResetInputAxes();
