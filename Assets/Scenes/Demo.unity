@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -95}
+  m_AnchoredPosition: {x: 0, y: -108}
   m_SizeDelta: {x: 185.7842, y: 58.972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &461138086
@@ -399,6 +399,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 543301695, guid: daec7d2c8b94a86428ca1615f35184ef, type: 3}
+      propertyPath: runner
+      value: 
+      objectReference: {fileID: 1201657344}
     - target: {fileID: 942339293255639252, guid: daec7d2c8b94a86428ca1615f35184ef, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1392,7 +1396,7 @@ MonoBehaviour:
   variableStorage: {fileID: 1201657342}
   dialogueUI: {fileID: 1201657343}
   startNode: Start
-  startAutomatically: 1
+  startAutomatically: 0
   onNodeStart:
     m_PersistentCalls:
       m_Calls: []
