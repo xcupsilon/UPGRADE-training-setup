@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8f7ba30e543b6424991848a9bdf4f346
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - demo_yarn-Start-0
+  - demo_yarn-Start-1
+  - demo_yarn-Start-2
+  - demo_yarn-Honest-3
+  - demo_yarn-Silence-4
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 8f7ba30e543b6424991848a9bdf4f346, type: 3}
+  localizations: []

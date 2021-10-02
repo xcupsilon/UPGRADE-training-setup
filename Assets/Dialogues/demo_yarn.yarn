@@ -1,0 +1,23 @@
+title: Start
+tags: 
+colorID: 0
+position: 543,62
+---
+NPC: Hi, CIS freshman! How are you doing?
+[[Ahhhhh...barely surviving with that 120 & 160 combo...|Honest]]
+[[........(after catching freshman plague and receiving a week of no sleep)|Silence]]
+===
+title: Honest
+tags: 
+colorID: 1
+position: 430,363
+---
+Sheeshhhh..may Rajiv sensei show mercy for you
+===
+title: Silence
+tags: 
+colorID: 0
+position: 687,355
+---
+I see I see. Welp, don't want to remind you but have fun with the 160 midterm :)
+===
