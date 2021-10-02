@@ -1,1 +1,1 @@
-# UPGRADE-training-setup
+# Team 1: Dialogue & Interaction
