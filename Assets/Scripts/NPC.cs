@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour, IInteractable
 {
-    public virtual void Interact()
+    public bool Interacted(GameObject obj)
     {
-        Debug.Log("Interacting with Player");
-    }
-
-    public virtual void StopInteract()
-    {
-        Debug.Log("Stop Interacting with Player");
+        Debug.Log("NPC has been interacted with");
+        
+        return true;
     }
 }
